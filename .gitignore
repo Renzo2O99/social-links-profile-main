@@ -1,0 +1,17 @@
+# Evitar la carga accidental de los archivos de diseño de Sketch y Figma
+#####################################################
+*.sketch
+*.fig
+
+# Evitar la carga accidental de archivos XD si conviertes el archivo de diseño
+###############################################
+*.xd
+
+# ¡Evita que tu proyecto esté lleno de molestos archivos .DS_Store!
+.DS_Store
+.prettierignore
+
+design/
+preview.jpg
+template-readme.md
+style-guide.md

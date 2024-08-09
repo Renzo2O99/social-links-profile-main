@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+    --fuente-principal: 'Inter';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100vh;
+    background-color: var(--Grey-900);
+    color: var(--White);
+}
+
+
+.main {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    max-height: 70vh;
+    border-radius: 2rem;
+    padding: 5rem;
+    background-color: var(--Grey-800);
+}
+
+@media (max-height: 700px) {
+    .main {
+        max-height: 82vh;
+    }
+}
+
+.profile {
+    position: absolute;
+    top: 0;
+
+    display: grid;
+    justify-content: center;
+}
+
+.image-container {
+    margin: 0 auto;
+    height: 15vh;
+    width: 15vh;
+}
+
+@media (max-height: 700px) {
+    .image-container {
+        height: 12vh;
+        width: 12vh;
+    }
+}
+
+.image-container img {
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+
+.info-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.name-profile {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.ubication-profile {
+    color: var(--Green);
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+
+.hability-profile {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #f2f2f2c9;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+}
+
+@media (min-height: 800px) {
+    .links-container {
+        bottom: 5%;
+    }
+}
+
+@media (min-height: 900px) {
+    .links-container {
+        gap: 2.5rem;
+        bottom: 8%;
+    }
+}
+
+.link-item {
+    display: inline-block;
+    text-align: center;
+
+    min-width: 85%;
+    padding: 1rem 3rem;
+    background-color: var(--Grey-700);
+    border-radius: 1rem;
+    transition: .3s ease-in-out;
+}
+
+.link-item:hover {
+    cursor: pointer;
+    background-color: var(--Green);
+}
+
+.link-item a {
+    color: var(--White);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+
+    padding: 0;
+    min-width: 100%;
+    background-color: var(--Grey-800);
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
