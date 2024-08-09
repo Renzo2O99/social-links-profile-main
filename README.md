@@ -22,7 +22,7 @@ Este proyecto consiste en una tarjeta de vista previa para un blog, diseñada si
 
 ### Links
 
-- Live Site URL: [QR Code Component]() by [@Renzo2O99](https://github.com/Renzo2O99/)
+- Live Site URL: [Social links Profile](https://renzo2o99.github.io/social-links-profile-main/) by [@Renzo2O99](https://github.com/Renzo2O99/)
 
 ## Características Principales
 
